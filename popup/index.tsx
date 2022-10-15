@@ -1,15 +1,10 @@
-import { useState } from "react"
+import styled from "styled-components"
+
+import InputBox from "./components/dummy_input"
 
 function IndexPopup() {
-  const [data, setData] = useState("")
-
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        padding: 16
-      }}>
+    <div>
       <h2>
         Welcome to your{" "}
         <a href="https://www.plasmo.com" target="_blank">
@@ -17,7 +12,7 @@ function IndexPopup() {
         </a>{" "}
         Extension!
       </h2>
-      <input onChange={(e) => setData(e.target.value)} value={data} />
+      <InputBox />
       <a href="https://docs.plasmo.com" target="_blank">
         View Docs
       </a>
