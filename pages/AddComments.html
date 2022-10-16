@@ -1,45 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Comments</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"
-      rel="stylesheet"
+<div class="Comments hidden" id="comments">
+  <img
+    src="https://storage.googleapis.com/bindr-public-resources/Images/Cross.png"
+    alt="Cancel"
+    id="cross"
+  />
+  <img
+    src="https://storage.googleapis.com/bindr-public-resources/Images/Dragbtn.png"
+    alt="Drag"
+    class="dragger"
+  />
+
+  <h1 class="TitleHead">Add Comments</h1>
+  <form>
+    <input
+      type="text"
+      id="title"
+      name="title"
+      placeholder="Title"
+      class="form-control"
+      autofocus
     />
-    <link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="./AddComments.css">
-</head>
-<body>
-    <div class="Comments" id="comments">
-        <img src="./Images/Cross.png" alt="Cancel" id="cross">
-        <img src="./Images/Dragbtn.png" alt="Drag" class="dragger">
-
-        <h1 class="TitleHead">Add Comments</h1>
-        <form>
-            <input type="text" id="title" name="title" placeholder="Title" class="form-control" autofocus>
-            <textarea name="commentbox" id="commentbox" cols="20" rows="6"  placeholder="Comments..." class="form-control" autofocus></textarea>
-            <div>
-            <input type="text" id="tags" name="tags" placeholder="Tags" spellcheck="false" class="form-control" value="" autofocus>
-            </div>
-            
-            <button class="type1">Save</button>
-            <br>
-            <button class="type2">Cancel</button>
-          </form> 
-        
+    <textarea
+      name="commentbox"
+      id="commentbox"
+      cols="20"
+      rows="6"
+      placeholder="Comments..."
+      class="form-control"
+      autofocus
+    ></textarea>
+    <div>
+      <input
+        type="text"
+        id="tags"
+        name="tags"
+        placeholder="Tags"
+        spellcheck="false"
+        class="form-control"
+        value=""
+        autofocus
+      />
     </div>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/@yaireo/tagify"></script>
-  <script src="https://unpkg.com/@yaireo/tagify@3.1.0/dist/tagify.polyfills.min.js"></script>
-  <script>
-    // The DOM element you wish to replace with Tagify
-var input = document.querySelector('input[name=tags]');
 
-// initialize Tagify on the above input node reference
-new Tagify(input)
-  </script>
-</html>
+    <button class="type1">Save</button>
+    <br />
+    <button class="type2">Cancel</button>
+  </form>
+</div>

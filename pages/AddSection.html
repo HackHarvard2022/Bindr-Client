@@ -1,44 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Section</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="./AddSection.css">
-</head>
-<body>
-    <div class="section">
-    <textarea name="add section" id="textSection" cols="100" rows="1" class="sectiontxt" placeholder="Type or paste anything you like, including links to your favourite videos, audios and images " oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'></textarea>
-    <pre id="home"></pre>
-    </div>
-    <script>
-        $(document).ready(function(){
-    $('#textSection').change(function(){
-      function getId(url) {
-      var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
-      var match = url.match(regExp);
-      
-
-      if (match && match[2].length == 11) {
-          return match[2];
-
-      } else {
-          return ;
-      }
-    }
-
-    var home = $('#textSection').val();
-    var myId = getId(home);
-
-
-    $('#home').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+ myId +'" id="vidplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>');
-        })
-    });
-
-    </script>
-
-</body>
-
-</html>
+<div class="section hidden" id="bindr-section-card-template">
+  <textarea
+    name="add section"
+    id="bindr-section-card-text"
+    cols="100"
+    rows="1"
+    class="sectiontxt"
+    placeholder="Type or paste anything you like, including links to your favourite videos, audios and images "
+    oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'
+  ></textarea>
+  <pre id="home"></pre>
+</div>
