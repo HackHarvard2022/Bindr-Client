@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        
+         .sectiontxt{
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-family: poppins;
+            font-size: 1em;
+            resize: none;
+            padding: 1.7em 2em ;
+            background-color: rgb(18, 0, 75);
+            color: rgb(219, 218, 255);
+        }
+        .section{
+            border-radius: 10px;
+            box-shadow: 5px 15px 45px rgba(0, 0, 0, 0.115);
+            background-color: rgb(18, 0, 75);
+            width: fit-content;
+            
+        }
+        ::placeholder{
+            color: rgb(219, 218, 255);
+        }
+
+        #vidplayer{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border-radius: 10px;
+            width: 80%;
+        }
