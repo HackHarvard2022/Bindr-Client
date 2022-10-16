@@ -11,7 +11,8 @@
       "css": [
         "styles/toolbox.css",
         "styles/AddComments.css",
-        "styles/AddSection.css"
+        "styles/AddSection.css",
+        "styles/Common.css"
       ]
     }
   ],
