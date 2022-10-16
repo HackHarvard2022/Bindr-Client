@@ -12,7 +12,9 @@
         "styles/toolbox.css",
         "styles/AddComments.css",
         "styles/AddSection.css",
-        "styles/Common.css"
+        "styles/Common.css",
+        "styles/StickyNote.css",
+        "styles/VidNoteBlock.css"
       ]
     }
   ],

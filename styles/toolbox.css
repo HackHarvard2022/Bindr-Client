@@ -13,7 +13,7 @@
   width: 5em;
   border-radius: 10px;
   box-shadow: 5px 15px 45px rgba(0, 0, 0, 0.115);
-  position: absolute;
+  position: fixed;
   left: 15px;
   top: 50%;
   transform: translate(0, -50%);
