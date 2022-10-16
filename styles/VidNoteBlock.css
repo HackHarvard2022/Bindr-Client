@@ -10,6 +10,7 @@
 
 .VideoSection {
   width: 24em;
+  background-color: white;
   box-shadow: 5px 15px 45px rgba(0, 0, 0, 0.115);
   padding: 1em 1.5em;
   margin-left: 2em;
