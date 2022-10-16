@@ -1,0 +1,41 @@
+{
+  "version": "0.0.0",
+  "author": "satwik",
+  "name": "Bindr",
+  "description": "Bindr Extension.",
+  "icons": {
+    "16": "icons/icon16.plasmo.9f44d99c.png",
+    "32": "icons/icon32.plasmo.83dbbbab.png",
+    "48": "icons/icon48.plasmo.a78c509e.png",
+    "64": "icons/icon64.plasmo.15206795.png",
+    "128": "icons/icon128.plasmo.c11f39af.png"
+  },
+  "manifest_version": 3,
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.plasmo.9f44d99c.png",
+      "32": "icons/icon32.plasmo.83dbbbab.png",
+      "48": "icons/icon48.plasmo.a78c509e.png",
+      "64": "icons/icon64.plasmo.15206795.png",
+      "128": "icons/icon128.plasmo.c11f39af.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "css": ["styles/toolbox.css"]
+    }
+  ],
+  "host_permissions": ["https://*/*"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' http://localhost;object-src 'self';"
+  },
+  "web_accessible_resources": [
+    {
+      "matches": ["<all_urls>"],
+      "resources": ["__parcel_hmr_proxy__", "pages/*", "utils/*"]
+    }
+  ]
+}

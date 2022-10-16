@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.ToolBox {
+  background-color: white;
+  padding: 0em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5em;
+  border-radius: 10px;
+  box-shadow: 5px 15px 45px rgba(0, 0, 0, 0.115);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 100;
+}
+.ScreenTools,
+.FileOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 17em;
+  width: 3em;
+}
+.FileOptions {
+  height: 17em;
+}
+img {
+  width: 2.1em;
+}
+#Visibility,
+#Highlighter {
+  width: 2.4em;
+}
+#Restart {
+  width: 2em;
+}
+#Drag {
+  width: 1.2em;
+  margin-top: 1.3em;
+}
+#Dashboard {
+  width: 2.7em;
+}
+.line {
+  width: 2.5em;
+  background-color: #acacac;
+  padding: 0.1em;
+  border-radius: 50px;
+}
