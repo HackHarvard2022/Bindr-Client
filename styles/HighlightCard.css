@@ -1,0 +1,50 @@
+#bindr-HCard {
+  width: 458px;
+  height: 232px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+}
+#bindr-HCard-icons {
+  min-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#bindr-HCard-icons-child {
+  display: flex;
+  min-width: 60px;
+  justify-content: space-between;
+}
+.bindr-HCard-edit-icon {
+  height: 20px;
+  width: 20px;
+}
+#bindr-HCard-heading {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+#bindr-HCard-description {
+  font-size: 15px;
+  font-weight: light;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+#bindr-filtertags {
+  /* background-color: #C7FFD7; */
+  height: 24px;
+  width: 298px;
+  padding: 10px;
+  display: flex;
+  font-size: 12px;
+}
+.bindr-filtertag {
+  border-radius: 10px;
+  background-color: #c7ffd7;
+  color: #00e440;
+  padding: 5px;
+  margin-right: 10px;
+}
